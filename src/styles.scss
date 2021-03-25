@@ -1,11 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
 
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: Roboto, 'Helvetica Neue', sans-serif;
-}
+/*
+  Inclui os estilos comuns para Material Angular. Incluímos isso aqui para que você apenas
+  tem que carregar um único arquivo css para Angular Material em seu aplicativo.
+  Certifique-se de incluir este mixin apenas uma vez!
+*/
+@include mat-core();
+@import './styles/global-styles.scss';
+@import './styles/themes/theme-green.scss';
+@import './styles/themes/theme.dark.scss';
