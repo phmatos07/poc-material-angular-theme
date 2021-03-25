@@ -1,0 +1,19 @@
+h1 {
+  margin-left: 15px;
+  text-transform: uppercase;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.icons {
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    color: #c2c2c2;
+  }
+}

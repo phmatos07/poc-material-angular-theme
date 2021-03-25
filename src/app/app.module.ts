@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { AppMaterialModule } from './app.material.module';
+import { HeaderModule } from './header/header.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +11,7 @@ import { AppMaterialModule } from './app.material.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppMaterialModule
+    HeaderModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
