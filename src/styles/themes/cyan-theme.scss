@@ -8,7 +8,7 @@ $app-foreground: mat-palette($mat-grey, 600, 200, 800); // Paleta de primeiro pl
 $app-background: mat-palette($mat-grey, 200, 50, 400); // Paleta de plano de fundo: Cores usadas para planos de fundo de elementos.
 
 // Função responsável por criar tema
-$theme-cyan: mat-light-theme(
+$cyan-theme: mat-light-theme(
   (
     color: (
       primary: $app-primary,
@@ -19,9 +19,3 @@ $theme-cyan: mat-light-theme(
     ),
   )
 );
-
-/*
-  Inclua estilos de tema para o núcleo e cada componente usado em seu aplicativo.
-  Alternativamente, você pode importar e @incluir os mixins de tema para cada componente que você está usando.
-*/
-@include angular-material-theme($theme-cyan);
