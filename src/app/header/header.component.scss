@@ -8,12 +8,7 @@ h1 {
 }
 
 .icons {
-  color: #ffffff;
   background-color: transparent;
-  border: none;
+  border: 0;
   cursor: pointer;
-
-  &:hover {
-    color: #c2c2c2;
-  }
 }

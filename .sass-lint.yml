@@ -10,6 +10,7 @@ files:
     - '.dist/**/*.s+(a|c)ss'
     - 'e2e/**/*.s+(a|c)ss'
     - 'node_modules/**/*.s+(a|c)ss'
+    - 'src/styles.scss'
 
 rules:
   no-vendor-prefixes: 0
