@@ -7,5 +7,13 @@
 */
 @include mat-core();
 @import './styles/global-styles.scss';
-@import './styles/themes/theme-cyan.scss';
-@import './styles/themes/theme.dark.scss';
+@import './styles/themes/cyan-theme.scss';
+@import './styles/themes/dark-theme.scss';
+@import './styles/components/input-component-theme.scss';
+
+/*
+  Inclua estilos de tema para o núcleo e cada componente usado em seu aplicativo.
+  Alternativamente, você pode importar e @incluir os mixins de tema para cada componente que você está usando.
+*/
+@include angular-material-theme($cyan-theme);
+@include input-component-theme($cyan-theme);

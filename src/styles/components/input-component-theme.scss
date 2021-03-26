@@ -1,0 +1,51 @@
+@import '~@angular/material/theming';
+
+@mixin input-component-theme($theme) {
+  $config: mat-get-color-config($theme);
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+  $foreground: map-get($theme, foreground);
+  $background: map-get($theme, background);
+
+  $input-padding: 10px;
+  $input-border: 1px solid mat-color($primary);
+  $input-border-hover: 2px solid mat-color($primary);
+  $input-border-focus: 2.5px solid mat-color($accent);
+  $input-border-radius: 5px 5px 5px 5px;
+
+  input.mat-input-element {
+    padding: $input-padding;
+    color: mat-color($foreground, text);
+    border: $input-border;
+    border-radius: $input-border-radius;
+
+    &:hover {
+      border: $input-border-hover;
+    }
+
+    &:focus {
+      border: $input-border-focus;
+    }
+  }
+
+  textarea.mat-input-element {
+    padding: $input-padding;
+    color: mat-color($foreground, text);
+    border: $input-border;
+    border-radius: $input-border-radius;
+    min-height: 400px;
+
+    &:hover {
+      border: $input-border-hover;
+    }
+
+    &:focus {
+      border: $input-border-focus;
+    }
+  }
+
+  .mat-form-field-underline {
+    display: none;
+  }
+}
