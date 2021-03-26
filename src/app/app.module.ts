@@ -7,6 +7,7 @@ import { ButtonsModule } from './buttons/buttons.module';
 import { CardModule } from './card/card.module';
 import { ExpansionPanelModule } from './expansion-panel/expansion-panel.module';
 import { HeaderModule } from './header/header.module';
+import { InputModule } from './inputs/input.module';
 
 @NgModule({
   declarations: [
@@ -15,11 +16,12 @@ import { HeaderModule } from './header/header.module';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    HeaderModule,
+    BadgeModule,
     ButtonsModule,
     CardModule,
-    BadgeModule,
-    ExpansionPanelModule
+    ExpansionPanelModule,
+    HeaderModule,
+    InputModule
   ],
   providers: [],
   bootstrap: [AppComponent]
