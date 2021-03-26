@@ -3,5 +3,17 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: baseline;
-  margin-top: 30px;
+  margin: {
+    top: 30px;
+    bottom: 30px;
+  }
+}
+
+.app-expansion-panel {
+  display: block;
+  margin: {
+    top: 40px;
+    left: 30px;
+    right: 30px;
+  }
 }
