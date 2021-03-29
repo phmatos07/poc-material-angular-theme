@@ -8,6 +8,7 @@ import { CardModule } from './card/card.module';
 import { ExpansionPanelModule } from './expansion-panel/expansion-panel.module';
 import { HeaderModule } from './header/header.module';
 import { InputModule } from './inputs/input.module';
+import { TitlesModule } from './titles/titles.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { InputModule } from './inputs/input.module';
     CardModule,
     ExpansionPanelModule,
     HeaderModule,
-    InputModule
+    InputModule,
+    TitlesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
