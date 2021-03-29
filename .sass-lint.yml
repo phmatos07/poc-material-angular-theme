@@ -114,6 +114,7 @@ rules:
       - 'font-size'
       - 'font-size-adjust'
       - 'font-weight'
+      - 'font-display'
       - 'font-style'
       - 'font-kerning'
       - 'font-feature-settings'
