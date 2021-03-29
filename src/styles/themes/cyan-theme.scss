@@ -1,0 +1,19 @@
+// mat-palette aceita as variantes $palette-name - (Parâmetros: main, lighter e darker)
+$app-primary: mat-palette($mat-cyan, 600, 300, 800); // Paleta Primária: Cores mais amplamente utilizadas em todas as telas e componentes.
+$app-accent: mat-palette($mat-teal, 600, 200, 800); // Paleta de Realce: Cores usadas para o botão de ação flutuante e elementos interativos.
+$app-warn: mat-palette($mat-red, 600, 200, 800); // Paleta de Aviso: Cores usadas para transmitir o estado de erro.
+$app-foreground: mat-palette($mat-grey, 600, 200, 800); // Paleta de primeiro plano: Cores para texto e ícones.
+$app-background: mat-palette($mat-grey, 200, 50, 400); // Paleta de plano de fundo: Cores usadas para planos de fundo de elementos.
+
+// Função responsável por criar tema
+$cyan-theme: mat-light-theme(
+  (
+    color: (
+      primary: $app-primary,
+      accent: $app-accent,
+      warn: $app-warn,
+      foreground: $app-foreground,
+      background: $app-background
+    ),
+  )
+);

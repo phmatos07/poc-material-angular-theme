@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  title = 'poc-material-angular-theme';
+  title = 'poc-material angular theme';
 }
