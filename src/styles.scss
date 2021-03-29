@@ -1,13 +1,14 @@
 @import '~@angular/material/theming';
+@import './styles/global-styles.scss';
+@import './styles/config/typography-configuration.scss';
+@import './styles/themes/cyan-theme.scss';
+@import './styles/themes/dark-theme.scss';
+@import './styles/components/input-component-theme.scss';
 
 // Inclui os estilos comuns para Material Angular. Incluímos isso aqui para que você apenas
 // tem que carregar um único arquivo css para Angular Material em seu aplicativo.
 // Certifique-se de incluir este mixin apenas uma vez!
-@include mat-core();
-@import './styles/global-styles.scss';
-@import './styles/themes/cyan-theme.scss';
-@import './styles/themes/dark-theme.scss';
-@import './styles/components/input-component-theme.scss';
+@include mat-core($typography);
 
 // Inclua estilos de tema para o núcleo e cada componente usado em seu aplicativo.
 // Alternativamente, você pode importar e @incluir os mixins de tema para cada componente que você está usando.
